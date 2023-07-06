@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Youtube API'>
+  <main class="min-h-screen bg-gray-900 flex items-center justify-center px-4">
+    <div class="max-w-md w-full bg-gray-800 rounded-lg shadow-lg p-8 transform transition-all duration-300 hover:shadow-xl">
+      <h1 class="text-3xl font-bold mb-6 text-center text-white">Youtube API</h1>
+      <div id="searchForm" class="mb-6 relative">
+        <label for="inputQuery" class="text-lg text-white block mb-2">Nome do canal ou URL do vídeo:</label>
+        <input type="text" id="inputQuery" class="w-full p-4 border border-gray-700 rounded-lg outline-none focus:ring-2 focus:ring-blue-500 text-white bg-gray-700">
+        <button id="submitButton" class="mt-4 w-full px-6 py-3 text-white rounded-lg bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Consultar</button>
+      </div>
+      <div id="videoData" class="hidden">
+        <h2 class="text-2xl font-bold mb-2 text-white">Título:</h2>
+        <p id="title" class="text-lg mb-4 text-white break-words"></p>
+        <h2 class="text-2xl font-bold mb-2 text-white">Descrição:</h2>
+        <p id="description" class="text-lg text-white break-words"></p>
+      </div>
+    </div>
+  </main>
+</Layout>
